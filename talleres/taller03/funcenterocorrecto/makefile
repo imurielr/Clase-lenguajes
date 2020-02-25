@@ -1,0 +1,8 @@
+all: funenterocorrecto
+
+funenterocorrecto: funenterocorrecto.o
+	$(CXX) -o $@     $^
+
+funenterocorrecto.o: funenterocorrecto.cpp
+
+clean: rm -f funenterocorrecto*.o
